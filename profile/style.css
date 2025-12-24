@@ -53,3 +53,11 @@
   font-weight: 500;
   transition: 0.3s;
 }
+.blue-btn {
+  background-color: #b6d2ee;
+  color: white;
+  margin-right: 10px;
+}
+.blue-btn:hover {
+  background-color: #fe6cae;
+}
