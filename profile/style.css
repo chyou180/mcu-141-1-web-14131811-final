@@ -69,3 +69,17 @@
   border: 8px solid #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+.social-icon {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.social-icon .icon {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icon .icon:hover {
+  background-color: #fe6cae;
+}
