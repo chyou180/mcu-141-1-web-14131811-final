@@ -92,3 +92,33 @@
 .social-icon .icon:hover {
   background-color: #fe6cae;
 }
+.sec {
+  padding: 80px 10%;
+  text-align: center;
+}
+.top-head {
+  margin-bottom: 50px;
+}
+.top-head h1 {
+  font-style: 35px;
+  color: #333;
+}
+.top-head span {
+  color: #777;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  text-align-last: left;
+}
+.col {
+  font: 1px;
+}
+.res-item {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
