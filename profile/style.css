@@ -28,6 +28,9 @@
 .navlist a:hover {
   color: #fe6cae;
 }
+.wrapper {
+  padding-top: 80px;
+}
 .feat-text {
   flex: 1;
 }
