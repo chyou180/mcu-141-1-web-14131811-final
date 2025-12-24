@@ -7,24 +7,33 @@
   padding: 1rem 5%;
   position: fixed;
   width: 100%;
-      top: 0;
+  top: 0;
 }
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
 }
-.navlist{
-    list-style: none;
-    display: flex;
+.navlist {
+  list-style: none;
+  display: flex;
 }
-.navlist li{
-    margin-left: 20px;
+.navlist li {
+  margin-left: 20px;
 }
-.navlist a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+.navlist a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-.navlist a:hover{
-    color: #fe6cae;
+.navlist a:hover {
+  color: #fe6cae;
+}
+.feat-text {
+  flex: 1;
+}
+.feat-name p {
+  font-size: 50px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
 }
