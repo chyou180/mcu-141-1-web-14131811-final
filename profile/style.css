@@ -61,3 +61,11 @@
 .blue-btn:hover {
   background-color: #fe6cae;
 }
+.feat-image .image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
