@@ -29,7 +29,7 @@
   color: #fe6cae;
 }
 .wrapper {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 .feat-text {
   flex: 1;
@@ -39,4 +39,17 @@
   font-weight: 700;
   color: #333;
   margin: 10px 0;
+}
+.feat-info {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
 }
