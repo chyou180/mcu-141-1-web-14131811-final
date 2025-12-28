@@ -208,3 +208,88 @@ footer {
   font-size: 14px;
   color: #777;
 }
+@media screen and (max-width: 768px) {
+  .navlist {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background-color: #b6d2ee;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+}
+
+.logo {
+  font-size: 4rem;
+}
+.navlist.responsive {
+  left: 0;
+}
+
+.navlist a {
+  letter-spacing: 1px;
+  gap: 25px;
+  margin: 0 5px;
+}
+.navlist li {
+  margin: 15px 0;
+}
+
+.nav-menu-btn {
+  display: block;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button {
+  display: none;
+}
+
+.feat-box {
+  flex-direction: column-reverse;
+  padding: 100px 5%;
+  text-align: center;
+  min-height: auto;
+}
+
+.feat-image .image img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.feat-text-card span {
+  font-size: 1.1rem;
+}
+.feat-name p {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.feat-text-info p {
+  font-size: 1.3rem;
+  color: #555;
+}
+.social-icon .icon {
+  font-size: 28px;
+  text-align: center;
+}
+
+.row {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+}
+
+.footer-manu {
+  flex-direction: column;
+  gap: 10px;
+}
