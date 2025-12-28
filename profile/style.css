@@ -9,7 +9,7 @@ html {
   backdrop-filter: blur(10px);
   color: white;
   padding: 0 10%;
-  height: 80px;
+  height: 150px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -17,7 +17,7 @@ html {
   right: 0;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 .navlist {
