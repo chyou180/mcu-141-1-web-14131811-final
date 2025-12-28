@@ -5,9 +5,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b6d2ee;
+  background-color: rgba(182, 210, 238, 0.9);
+  backdrop-filter: blur(10px);
   color: white;
-  padding: 0.5rem 5%;
+  padding: 0 10%;
+  height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,7 +17,7 @@ html {
   right: 0;
 }
 .logo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .navlist {
@@ -23,12 +25,13 @@ html {
   display: flex;
 }
 .navlist li {
-  margin-left: 20px;
+  margin: 0 15px;
 }
 .navlist a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 .navlist a:hover {
   color: #fe6cae;
