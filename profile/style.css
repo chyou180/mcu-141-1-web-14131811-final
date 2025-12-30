@@ -39,7 +39,7 @@ html {
   font-weight: 500;
 }
 .navlist a:hover {
-  color: #fe6cae;
+  color: #345d45fe;
 }
 .wrapper {
   padding-top: 60px;
@@ -74,12 +74,14 @@ html {
   transition: 0.3s;
 }
 .blue-btn {
+  padding: 10px 22px;
   background-color: #b6d2ee;
   color: white;
   margin-right: 10px;
+  border-radius: 8px;
 }
 .blue-btn:hover {
-  background-color: #fe6cae;
+  background-color: #29563a;
 }
 .feat-image .image img {
   width: 350px;
