@@ -160,3 +160,35 @@
     </footer>
   </body>
 </html>
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".navlist li a");
+
+  function scrollSpy() {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      // pageYOffset 是目前捲動的高度，我們補償一點高度 (200px) 讓它提前觸發
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active"); // 先移除所有點點
+
+      // 如果連結的 href 是目前這一頁的 ID，就加回 active
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  // 1. 網頁捲動時執行
+  window.addEventListener("scroll", scrollSpy);
+  // 2. 網頁剛打開時先執行一次，確保首頁的點點會亮
+  window.addEventListener("DOMContentLoaded", scrollSpy);
+</script>
