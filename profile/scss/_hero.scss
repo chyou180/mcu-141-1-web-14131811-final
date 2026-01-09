@@ -3,9 +3,12 @@
 }
 
 .feat-box {
-  @include flex-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
   padding: 100px 10%;
-  min-height: 80vh;
+  min-height: 100vh;
 
   @include mobile {
     flex-direction: column-reverse;
@@ -13,7 +16,7 @@
   }
 
   .feat-text {
-    flex: 1;
+    flex: 0.8;
     .feat-name p {
       font-size: 50px;
       font-weight: 700;
