@@ -70,3 +70,19 @@
     }
   }
 }
+.header {
+  @include tablet {
+    height: 110px;
+    padding: 0 5%;
+
+    .logo {
+      font-style: 3.5rem;
+    }
+    .navlist li {
+      margin: 0 10px;
+      a {
+        font-style: 1.1rem;
+      }
+    }
+  }
+}
