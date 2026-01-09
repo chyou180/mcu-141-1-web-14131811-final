@@ -32,3 +32,13 @@
     }
   }
 }
+.row {
+  @include tablet {
+    gap: 20px;
+
+    .col .res-item,
+    .col .edu {
+      padding: 20px;
+    }
+  }
+}
