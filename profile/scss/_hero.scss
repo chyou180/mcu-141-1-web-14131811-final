@@ -56,3 +56,30 @@
     }
   }
 }
+.feat-box {
+  @include tablet {
+    padding: 60px 5%;
+    min-height: 60vh;
+    gap: 30px;
+  }
+
+  .feat-text {
+    .feat-name p {
+      @include tablet {
+        font-size: 40px;
+      }
+    }
+    .feat-text-info p {
+      @include tablet {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .feat-image .image img {
+    @include tablet {
+      width: 280px;
+      height: 280px;
+    }
+  }
+}
