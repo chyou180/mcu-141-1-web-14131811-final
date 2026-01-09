@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    background-color: var(--white);
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    strong {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
