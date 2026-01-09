@@ -36,17 +36,17 @@
 
     @include mobile {
       position: fixed;
-      top: 100px;
+      top: 90px;
       left: -100%;
       flex-direction: column;
       background-color: var(--primary-color);
       width: 100%;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       padding: 20px 0;
       &.responsive {
         left: 0;
-      }
-      li {
-        margin: 15px 0;
       }
     }
   }
