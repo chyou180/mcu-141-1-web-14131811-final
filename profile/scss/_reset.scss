@@ -23,3 +23,14 @@ body {
     }
   }
 }
+.sec {
+  padding: 100px 10%;
+
+  @include tablet {
+    padding: 60px 5%;
+  }
+
+  @include mobile {
+    padding: 40px 5%;
+  }
+}
