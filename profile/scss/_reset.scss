@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+}
+.sec {
+  padding: 100px 10%;
+  text-align: center;
+  .top-head {
+    margin-bottom: 50px;
+    h1 {
+      font-size: 35px;
+      color: var(--text-dark);
+    }
+    span {
+      color: var(--text-muted);
+    }
+  }
+}
