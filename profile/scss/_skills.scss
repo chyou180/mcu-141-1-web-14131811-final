@@ -1,0 +1,31 @@
+.skill-cont {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  text-align: left;
+
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+
+    .value {
+      color: var(--primary-hover);
+    }
+  }
+
+  .progress-bar-wrap {
+    background-color: var(--bg-light);
+    height: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .progress-bar {
+      background-color: var(--primary-color);
+      height: 100%;
+      border-radius: 10px;
+      transition: width 1s ease-in-out;
+    }
+  }
+}
