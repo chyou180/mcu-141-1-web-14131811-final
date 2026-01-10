@@ -108,36 +108,36 @@
         <span>歷年來的專案項目</span>
       </div>
       <div class="grid">
-        <div class="item">
+        <a href="project/project1.html" class="item">
           <h4>作品 1</h4>
           <strong>1</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="item">
+        </a>
+        <a href="project/project2.html" class="item">
           <h4>作品 2</h4>
           <strong>2</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="item">
+        </a>
+        <a href="project/project3.html" class="item">
           <h4>作品 3</h4>
           <strong>3</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="item">
+        </a>
+        <a href="project/project4.html" class="item">
           <h4>作品 4</h4>
           <strong>4</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="item">
+        </a>
+        <a href="project/project5.html" class="item">
           <h4>作品 5</h4>
           <strong>5</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="item">
+        </a>
+        <a href="project/project6.html" class="item">
           <h4>作品 6</h4>
           <strong>6</strong>
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        </a>
       </div>
     </section>
     <footer>
@@ -163,7 +163,6 @@
 <script>
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".navlist li a");
-
   function scrollSpy() {
     let current = "";
 
@@ -171,24 +170,19 @@
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
 
-      // pageYOffset 是目前捲動的高度，我們補償一點高度 (200px) 讓它提前觸發
       if (window.pageYOffset >= sectionTop - 200) {
         current = section.getAttribute("id");
       }
     });
 
     navLinks.forEach((link) => {
-      link.classList.remove("active"); // 先移除所有點點
+      link.classList.remove("active");
 
-      // 如果連結的 href 是目前這一頁的 ID，就加回 active
       if (link.getAttribute("href") === `#${current}`) {
         link.classList.add("active");
       }
     });
   }
-
-  // 1. 網頁捲動時執行
   window.addEventListener("scroll", scrollSpy);
-  // 2. 網頁剛打開時先執行一次，確保首頁的點點會亮
   window.addEventListener("DOMContentLoaded", scrollSpy);
 </script>
